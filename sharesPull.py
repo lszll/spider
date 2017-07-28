@@ -55,7 +55,7 @@ def getStockInfo(lst, stockURL, fpath):
             for i in range(len(keyList)):
                 key = keyList[i].text
                 val = valueList[i].text
-                infoDict[key] = val
+                infoDict[key] = val  
              
             with open(fpath, 'a', encoding='utf-8') as f:
                 f.write( str(infoDict) + '\n' )
